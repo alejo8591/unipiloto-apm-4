@@ -1,0 +1,16 @@
+body{
+    background-color: coral;
+    color: #005494;
+    font-family: "Arial Hebrew";
+}
+
+#padded, #not-padded{
+    width: 450px;
+    background-color: #0F97FF;
+    border: 2px solid #999;
+    margin: 20px;
+}
+
+#padded{
+    padding: 20px;
+}

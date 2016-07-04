@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab16</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de ejemplo</h1>
+    <form name="form-one">
+        <p>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" />
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+        </p>
+        <fieldset>
+            <legend>Cual es su salario anual</legend>
+            <p>
+                <label>
+                    <input type="radio" name="income" value="< 20.000.000" id="income-0"> Menos de 20.000.000
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="income" value="20.000.000 - 40.000.000" id="income-1"> 20.000.000 - 40.000.000
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="income" value="40.000.000 - 60.000.0000" id="income-2"> 40.000.000 - 60.000.000
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="income" value="60.000.000 - 80.000.0000" id="income-3"> 60.000.000 - 80.000.000
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="income" value="Ns/Nr" id="income-4"> Ns/Nr
+                </label>
+                <br />
+            </p>
+        </fieldset>
+        <p>
+            <label for="region">Donde vive ud?</label>
+            <select name="region" id="region">
+                <option value="0" selected>Seleccione una Ciudad</option>
+                <option value="Bogotá">BOGOTA</option>
+                <option value="Cali">Cali</option>
+                <option value="B/quilla">B/quilla</option>
+            </select>
+        </p>
+        <p>
+            <label for="ideas">Su opinion es importante</label>
+            <textarea name="ideas" id="ideas"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="send" id="send" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

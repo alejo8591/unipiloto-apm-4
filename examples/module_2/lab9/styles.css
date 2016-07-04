@@ -1,0 +1,70 @@
+table {
+    border-spacing: 2em 1em;
+    margin: 25px auto;
+}
+
+caption {
+    font-family: Tahoma, "Arial Black", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+td {
+    border: #000 solid 1px;
+    text-align: center;
+    padding: 10px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    width: 7em;
+    white-space: pre;
+}
+
+#aqua {
+    background-color: aqua;
+}
+
+#black {
+    background-color: black;
+}
+
+#peru {
+    background-color: peru;
+}
+
+#fuchsia {
+    background-color: fuchsia;
+}
+
+#maroon {
+    background-color: maroon;
+}
+
+#olive {
+    background-color: olivedrab;
+}
+
+#aqua, #peru, #fuchsia, #maroon, #olive {
+    color: black;
+}
+
+p.first {
+    color: #000;
+    text-decoration: overline;
+}
+
+p.second {
+    color: #7A7A7A;
+    text-decoration: underline;
+}
+
+p.third {
+    color: blanchedalmond;
+    text-decoration: solid;
+}
+
+p.fourth {
+    color: #97D2FF;
+    text-decoration: double;
+}

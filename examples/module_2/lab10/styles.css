@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkorange;
+    color: #FFF;
+    font-family: "Abadi MT Condensed Extra Bold", Monaco, Arial, "Arial Black";
+}
+
+#centered-box {
+    background-color: aqua;
+    border: 2px solid #999;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+

@@ -1,0 +1,44 @@
+body{
+    font-family: "Lucida Blackletter", "Arial Black", sans-serif;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 250px;
+}
+
+fieldset label {
+    font-weight: normal;
+    width: auto;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    padding-left: 0;
+}
+
+label[for="region"], label[for="ideas"] {
+    width: auto;
+}
+
+textarea{
+    height: 100px;
+    width: 300px;
+}
+
+form{
+    margin-left: 60px;
+}

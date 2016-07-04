@@ -1,0 +1,22 @@
+body{
+    background-color: coral;
+    color: #FFFFFF;
+    font-family: "Arial Hebrew";
+}
+.relative{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: rebeccapurple;
+    margin: 10px;
+}
+
+.absolute{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    background: #005494;
+    margin: 10px;
+}

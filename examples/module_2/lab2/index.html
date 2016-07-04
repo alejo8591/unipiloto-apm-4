@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		@media screen and (max-width: 800px) {
+			.large-menu {
+				color: blue;
+			}
+		}
+
+		@media screen and (min-width: 801px) and ( max-width: 1024px ) {
+			.large-menu {
+				display: inline;
+				width: 100%;
+			}
+
+			.large-menu ul {
+				list-style-type: none; 
+			}
+
+			.large-menu ul li {
+				color: red;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<section class="large-menu">
+		<ul>
+			<li href="#">link 1</li>
+			<li href="#">link 2</li>
+			<li href="#">link 3</li>
+		</ul>
+	</section>
+	<section class="content">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum cum sunt eaque, recusandae ipsa nostrum aut vero nihil ab ex incidunt quae voluptatum ea vel nobis corporis officia. Nulla, quam!
+		</p>
+	</section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Monaco, Arial, "Arial Black";
+}
+
+#container{
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+p{
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2, h3{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0.25em;
+}
+
+.float-left{
+    float: left;
+    margin: 3px 10px 3px 0;
+}
+
+.float-right{
+    float: right;
+    margin: 3px 0 3px 10px;
+}
+
+h2{
+    clear: both;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.rotate {
+			/* Safari and Chrome */
+			-webkit-transform: rotate(-45deg);
+
+			/* Firefox */
+			-moz-transfor: rotate(-45deg);
+
+			/* IE */
+			-ms-transform: rotate(-45deg);
+
+			/* Opera */
+			-o-transform: rotate(-45deg);
+			
+			/* normal */
+			transform: rotate(-45deg);
+		}
+
+		@media screen and (max-width: 480px){}
+
+		@media screen and (min-width: 481px) and (max-width: 960px){
+
+			.rotate {
+				/* Safari and Chrome */
+				-webkit-transform: rotate(-90deg);
+
+				/* Firefox */
+				-moz-transfor: rotate(-90deg);
+
+				/* IE */
+				-ms-transform: rotate(-90deg);
+
+				/* Opera */
+				-o-transform: rotate(-90deg);
+				
+				/* normal */
+				transform: rotate(-90deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<p class="rotate">
+		Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+	</p>
+</body>
+</html>

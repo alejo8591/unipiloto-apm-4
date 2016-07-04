@@ -1,0 +1,34 @@
+.relative{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background: #97D2FF;
+}
+.absolute-one{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+}
+
+.absolute-two{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    background: mediumpurple;
+}
+
+.absolute-three{
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    background: rebeccapurple;
+}

@@ -1,0 +1,132 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #333;
+	font-weight: bold;
+}
+
+
+.header{
+	background-color: #3a3f43;
+	border-bottom: 14px;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	padding: 22px 0;
+}
+
+.logo{
+	background-color: #515558;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	width: 250px;
+}
+
+.logo h1{
+	color: #FFF;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+/* Start navigation */
+.nav-menu, .services > figure.columns{
+	display: none;
+}
+
+label{
+	color: #3A3F43;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px;
+}
+
+.nav-menu:checked + label{
+	background-color: #3A3F43;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #FFF;
+}
+
+#all:checked ~ .services .all,
+#develop:checked ~ .services .develop,
+#languages:checked ~ .services .languages,
+#skills:checked ~ .services .skills,
+#test:checked ~ .services .test {
+	display: block;
+}
+
+/* end navigation */
+
+/* start section services */
+.services{
+	margin-top: 20px;
+}
+
+.services .four.columns{
+	margin-left: 0;
+	margin-right: 0;
+	width: 240px;
+}
+
+.services > figure{
+	position: relative;
+	overflow: hidden;
+}
+
+.services > figure img{
+	display: block;
+	max-width: 100%;
+}
+
+.services figcaption{
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: rgba(58, 63,68, 0.8);
+
+	padding: 10%;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+
+.services figcaption h4{
+	color: #fff;
+}
+
+.services figcaption p{
+	color: #fff;
+	font-size: 0.9em;
+}
+
+.services > figure:hover figcaption{
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+
+/* End services */
+
+.footer{
+	border-top: 1px solid #ccc;
+	margin-top: 10px;
+	padding: 28px 0;
+}
