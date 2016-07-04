@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+      font: 16px/1.4 Georgia, Serif;
+      width: 70%;
+      margin: 30px auto;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 42px;
+}
+
+h1, p, pre, video, h2, figure, h3, ol, script, style {
+    margin: 0 0 15px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    display: block;
+    background: #eee;
+    padding: 10px;
+}
+figcaption {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 14px;
+    orphans: 2;
+}
+
+li {
+    margin: 0 0 5px 20px;
+}
+
+article {
+    background: white;
+    padding: 10%;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+pre, article style, article script {
+    white-space: pre;
+    display: block;
+    padding: 10px;
+    background: #eee;
+    overflow-x: auto;
+    font: 12px Monaco, MonoSpace;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
