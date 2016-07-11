@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Prototipos
+    function Person(id, name){
+      this.id = id;
+      this.name = name;
+    }
+
+    Person.prototype.hello = function(name){
+      console.log(this.name + ' te saluda ' + name);
+    };
+
+    function Student(id, name, number_id){
+      Person.prototype.constructor.call(this, id, name);
+      this.number_id = number_id;
+    }
+
+    Student.prototype = new Person();
+
+    Student.prototype.constructor = Student;
+
+    Student.prototype.study = function(){
+      console.log('Estudiando...');
+    };
+
+    var student = new Student('383338', 'Alejandro', '44711515');
+
+    student.hello('yopo');
+
+    student.study();
+
+    console.log(student.constructor);
+
+    console.log(student);
+
+  </script>
+</body>
+</html>

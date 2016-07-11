@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<form>
+			<!-- Select del ripo multiple opción -->
+			<span class="label">Seleccione el tipo de comida</span>
+			<select name="food" id="food" class="infobox" multiple>
+				<option value="0">Eleccione algún ítem</option>
+				<option value="Pizza $5000">Pizza $5000</option>
+				<option value="Coca-Cola $2000">Coca-Cola $2000</option>
+				<option value="HotDog $5000">HotDog $5000</option>
+				<option value="Papas Fritas $3000">Papas Fritas $3000</option>
+			</select><br />
+			<p class="error"></p>
+			<p class="result"></p>
+			<input type="submit" class="submit" value="Enviar" />
+		</form>
+	</body>
+</html>

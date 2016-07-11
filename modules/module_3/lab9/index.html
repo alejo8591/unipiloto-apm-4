@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="names">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="controller_one">
+		<h1>Names</h1>
+		<ul>
+			<li ng-repeat="name in simple_names">{{ name  }}</li>
+		</ul>
+
+		<h1>Heroes</h1>
+		<ul>
+			<li ng-repeat="hero in heroes">{{ hero.firstname }} {{ hero.lastname }}</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+	angular.module('names', [])
+	       .controller('controller_one',function($scope){
+    	       	$scope.simple_names = ["Alejandro", "Patrick", "Bolson"];
+                $scope.heroes = [
+                    {
+                        firstname: "Alejandro",
+                        lastname: "Romero"
+                    },
+                    {
+                        firstname: "Diego",
+                        lastname: "Pan"
+                    },
+                    {
+                        firstname: "Filly",
+                        lastname: "Rest"
+                    },
+                    {
+                        firstname: "Jimmy",
+                        lastname: "Lagp"
+                    },
+                    {
+                        firstname: "Yopo",
+                        lastname: "Rom"
+                    },
+                    {
+                        firstname: "Sara",
+                        lastname: "Rome"
+                    }
+                ];
+	       });
+		
+	</script>
+</body>
+</html>

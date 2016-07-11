@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- nombre del modulo y/o aplicación directiva ng-app -->
+<html lang="en" ng-app="Student-App">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- Uso del controlador 'StudentController' a través de la directiva ng-controllers  -->
+<body ng-controller="StudentController">
+  <h1>Información de los Alumnos</h1>
+  <div class="wrapper">
+    <!--
+      Uso de la directiva `ng-repeat` para iterar sobre el modelo que es un objeto JSON
+      llamado `students` al cual se le aplica un filtro de organizar los elementos
+      en orden ascendete para el campo `name`
+    -->
+    <div class="contact-item" ng-repeat="student in students | orderBy:'name'">
+      <!--
+        Uso del ítem `student` a traves de la iteración de `students`
+        ubicado el controlador 'StudentController
+      -->
+      <div class="name">{{ student.name }}</div>
+      <span class="course">Estudia {{ student.course }} y su número es {{ student.phone }}</span>
+    </div>
+  </div>
+  <div class="wrapper">
+    <h2>Añadir Información</h2>
+    <!--
+     Solicitando información a través de inputs del tipo text y number
+     y asignando un elemento de modelo `newStudent` el cual tiene tres datos:
+     - name
+     - course
+     - phone
+     Estos datos se agregan al objeto `students` con la directiva ng-click
+     que en el controlador la resuelve como un método para agregar objetos JSON
+     al modelo `students`
+    -->
+    Nombre: <input type="text" ng-model="newStudent.name">
+    Curso: <input type="text" ng-model="newStudent.course">
+    Teléfono: <input type="number" ng-model="newStudent.phone">
+    <!--
+      Directiva `ng-click` a la espera del evento, para activar el
+      método que se encuentra en el controlador y que sirve para
+      agregar datos
+    -->
+    <button ng-click="SaveStudent()">Guardar</button>
+  </div>
+  <script charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script charset="utf-8" src="js/index.js"></script>
+</body>
+</html>

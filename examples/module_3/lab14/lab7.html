@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Métodos privilegiados
+    function Person(){
+      var _this = this;
+      this.id = '';
+      this.name = '';
+      var age = 0;
+
+      function increasingYears(){
+        age++;
+
+        console.log(age);
+
+        if(age){
+          _this.hello('yopo');
+        }
+      }
+
+      this.growUp = function(){
+        increasingYears();
+      };
+
+    }
+
+    Person.prototype.hello = function(name){
+      console.log(this.name + ' te saluda ' + name);
+    };
+
+    var i_am = new Person();
+    var you = new Person();
+
+    i_am.id = '33833838';
+    i_am.name = 'Alejandro Romero';
+
+    i_am.growUp();
+
+    you.id = '38783838';
+    you.name = 'Pepa Pombo';
+
+    //console.log(i_am);
+    //console.log(you);
+  </script>
+</body>
+</html>

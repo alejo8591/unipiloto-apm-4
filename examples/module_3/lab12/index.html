@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- nombre del modulo y/o aplicación directiva ng-app -->
+<html lang="en" ng-app="Student-App">
+<head>
+  <meta charset="UTF-8">
+  <script charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <title>Document</title>
+  <script charset="utf-8">
+      // Declaración del modulo 'Student-App'
+      angular.module('Student-App', [])
+        // Declaracion del Controlador 'StudentController'
+        .controller('StudentController', function($scope){
+            // Instancia del modelo 'student' con $scope
+            $scope.student = {
+                "name": "Alejandro Romero",
+                "course": "Diplomado AM-2"
+            }
+        });
+  </script>
+</head>
+<!-- Uso del controlador 'StudentController' a través de la directiva ng-controllers  -->
+<body ng-controller="StudentController">
+<!-- Uso del modelo instanciado en 'StudentController' a traves de expresiones  -->
+  {{ student.name | uppercase }} Estudia {{ student.course }}
+</body>
+</html>

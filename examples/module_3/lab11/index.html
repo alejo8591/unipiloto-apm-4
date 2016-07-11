@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Angular JS Forms</title>
+</head>
+<body>
+   <h2>AngularJS Sample Application</h2>
+   <!-- Ejercicio donde se utilizan multiples controladores
+        en diferentes etiquetas div, incluso el controlador
+        `shapeController` contiene `circleController` y
+        `squareController`
+   -->
+   <div ng-app="mainApp" ng-controller="shapeController">
+      <p>{{message}} <br/> {{type}} </p>
+      <div ng-controller="circleController">
+         <p>{{message}} <br/> {{type}} </p>
+      </div>
+      <div ng-controller="squareController">
+         <p>{{message}} <br/> {{type}} </p>
+      </div>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+   <script>
+      angular.module("mainApp", [])
+      .controller("shapeController", function($scope) {
+         $scope.message = "In shape controller";
+         $scope.type = "Shape";
+      })
+     .controller("circleController", function($scope) {
+         $scope.message = "In circle controller";
+         $scope.type = "Circle";
+      })
+      .controller("squareController", function($scope) {
+         $scope.message = "In square controller";
+         $scope.type = "Square";
+      });
+   </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Propiedades privadas
+    function Person(){
+      this.id = '';
+      this.name = '';
+      var age = 0;
+
+      function increasingYears(){
+        age++;
+      }
+
+    }
+
+    Person.prototype.growUp = function(){
+      increasingYears();
+    };
+
+    var i_am = new Person();
+    var you = new Person();
+
+    i_am.id = '33833838';
+    i_am.name = 'Alejandro Romero';
+
+    i_am.increasing_years();
+
+    you.id = '38783838';
+    you.name = 'Pepa Pombo';
+
+    console.log(i_am);
+    console.log(you);
+  </script>
+</body>
+</html>

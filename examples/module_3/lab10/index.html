@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>  
+		<form>   
+			<fieldset>
+				<legend>Información General</legend>
+				<fieldset>
+					<div id="userinfo">
+						<span class="label">Documento de Identidad</span>
+						<input type="text" id="nid" placeholder="doc. Identidad" />
+						<span class="nid-error"></span>
+
+						<span class="label">Nombre(s) y Apellido(s)</span>
+						<input type="text" id="username" />
+						<span class="user-error"></span>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div id="user">
+						<span class="label">Password</span>
+						<input type="password" class="password" name="password" />
+						<span class="password-error"></span>
+
+						<span class="label">Confirmar Password</span>
+						<input type="password" class="conf-password" name="conf-password" />
+						<span class="conf-password-error"></span>
+					</div>
+					<div>
+						<span class="label">Email</span>
+						<input type="email" class="emailadd" name="emailid" />
+						<span class="email-error"></span>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div id="checkboxes">
+						<span class="label">Seleccionar Alimentos</span><br>
+						<input type="checkbox"  id="pizza" name="pizza" value=5000  class="chkb">Pizza $5000 <br>
+						<input type="checkbox"  id="hotdog" name="hotdog" value=3000  class="chkb">HotDog $3000<br>
+						<input type="checkbox"  id="coke" name="coke" value=2000  class="chkb">Coca-Cola $2000<br>
+						<input type="checkbox"  id="fries" name="fries" value=3000  class="chkb">Papas Fritas $3000<br />
+						<span class="food-error"></span>
+						<br />
+						<span class="food-total"></span>
+						<br />
+					</div>
+				</fieldset>
+				<fieldset>
+					<div id="radios">
+						<span class="label">Modo de Pago</span><br>
+						<input type="radio"  name="paymode" class="radiobtn" value="Master Card">Master Card <br />
+						<input type="radio"  name="paymode" class="radiobtn" value="Visa Card">Visa Card<br />
+						<span class="pay-error"></span>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div>
+						<span class="label">Ciudad</span>
+						<select id="city" class="infobox">
+							<option value="0">Seleccione una ciudad</option>
+							<option value="Barranquilla">Barranquilla</option>
+							<option value="Bogota">Bogotá</option>
+							<option value="Calí">Calí</option>
+							<option value="Cartagena">Cartagena</option>
+							<option value="Medellin">Medellin</option>
+						</select><br />
+						<span class="city-error"></span>
+					</div>
+				</fieldset>
+				<div id="buttons">
+					<button class="button" href="#">Enviar</button>
+				</div>
+		</fieldset>
+	</form> 
+
+	<div id="openModal" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+		</div>
+	</div>
+	</body>
+</html>

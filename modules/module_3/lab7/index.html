@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<h1>Productos</h1>
+	<ul>
+		<li>Smartphone {{ 500000 | currency }}</li>
+		<li>Tablet {{ 200000 | currency: "$" }}</li>
+		<li>laptop {{ 3000000 * 0.16 + 20000 }} </li>
+		<li> Importado de {{ 'MaDe In ChiNA' | uppercase }} </li>
+	</ul>
+	<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</body>
+</html>

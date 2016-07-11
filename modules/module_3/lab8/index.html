@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="reveal-app">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="controllerOne">
+		<div ng-show="revealDiv">
+			<h1>Hola mundo</h1>
+		</div>
+
+		<button ng-click="controlButton()" ng-show="revealButton">Ocultar button</button>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+	<script type="text/javascript">
+	angular.module('reveal-app', [])
+		   .controller('controllerOne', function($scope){
+		   		$scope.revealDiv = false;
+		   		$scope.revealButton = true;
+		   		$scope.controlButton = function(){
+		   			$scope.revealDiv = true;
+		   			$scope.revealButton = false;
+		   		};
+		   });
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Método estatico
+    function Conversion(){}
+
+    Conversion.DEGREES_TO_RADIANS = Math.PI/180;
+    Conversion.RADIANS_TO_DEGREES = 180/Math.PI;
+
+    Conversion.toRadians = function(degrees){
+      return degrees * Conversion.DEGREES_TO_RADIANS;
+    };
+
+    Conversion.toDegrees = function(radians){
+      return radians * Conversion.RADIANS_TO_DEGREES;
+    };
+
+    console.log('180 grados son: ' + Conversion.toRadians(180) + ' radianes.');
+    console.log('2PI radianes son: ' + Conversion.toDegrees(2 * Math.PI) + ' grados.');
+
+  </script>
+</body>
+</html>
