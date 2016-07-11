@@ -21,7 +21,7 @@ El espacio de comunicación y dudas esta abierto y sera como en consenso se deci
 
 ### Material Extra
 
-* [En la wiki del repositorio encuentran un este espacio donde se colocara información, artículos, cursos, e-books y material que pueda servir de apoyo.](http://git.io/vctjl)
+* [En la wiki del repositorio encuentran un este espacio donde se colocara información, artículos, cursos, e-books y material que pueda servir de apoyo.](https://github.com/alejo8591/unipiloto-apm-4/wiki)
 * [Cheat Sheets o Chuletas](https://github.com/alejo8591/unipiloto-apm-4/wiki/Cheat-Sheets)
 * [Depuración (Debugging) en Apache Cordova](https://github.com/alejo8591/unipiloto-apm-4/wiki/Debugging-en-Apache-Cordova)
 
