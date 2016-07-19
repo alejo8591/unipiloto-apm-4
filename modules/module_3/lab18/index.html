@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="initial_spi">
+<head>
+	<title>Lab18</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+</head>
+<body>
+   <h1>Elementos</h1>
+
+    <div ng-include src=" 'includes/header.html' "></div>
+    <div ng-include src=" 'includes/menu.html' "></div>
+
+    <div ng-view></div>
+</body>
+</html>

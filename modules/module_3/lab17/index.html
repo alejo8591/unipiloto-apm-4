@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="initial_spi">
+<head>
+	<title>Lab17</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+</head>
+<body>
+   <h1>Visita el Zoo</h1>
+
+    <div ng-include src=" 'includes/header.html' "></div>
+    <div ng-include src=" 'includes/menu.html' "></div>
+
+    <div ng-view></div>
+
+    <script>
+        angular.module('initial_spi', ['ngRoute'])
+               .config(['$routeProvider', function($routeProvider){
+
+            /*
+             * `when()` cuantas veces sea necesario
+             * `otherwise()` una sola vez "OJO"
+            */
+            $routeProvider
+
+            .when('/hello', {
+                templateUrl : "hello.html"
+            })
+            
+            .when('/message/one', 
+                {
+                    templateUrl: "message-one.html"
+                })
+
+            .when('/message/two',
+                    {
+                        templateUrl: "message-two.html"
+            })
+
+            .when('/message/three',
+                    {
+                        templateUrl: "message-three.html"
+            })
+
+            .otherwise({
+                redirectTo: '/',
+                templateUrl: 'otherwise.html'
+            });
+
+               }])
+    </script>
+</body>
+</html>

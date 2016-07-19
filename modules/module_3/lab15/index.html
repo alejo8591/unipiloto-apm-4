@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab15</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<h2>Forms</h2>
+<div ng-app="mainApp" ng-controller="studentController">
+<form name="studentForm" novalidate>
+<table border="0">
+    <!--
+     $dirty:  Será TRUE, si el usuario ya ha interactuado con el formulario.
+     $invalid: será TRUE, si por lo menos uno que contiene la forma y el control no es válido.
+     $error: Es un hash objeto, que contiene referencias a todos los controles no válidos o formas, en los que:
+
+    -->
+<tr><td>Enter first name:</td><td><input name="firstname" type="text" ng-model="firstName" required>
+   <span style="color:#ff2a25" ng-show="studentForm.firstname.$dirty && studentForm.firstname.$invalid">
+      <span ng-show="studentForm.firstname.$error.required">First Name is required.</span>
+   </span>
+</td></tr>
+<tr><td>Enter last name: </td><td><input name="lastname"  type="text" ng-model="lastName" required>
+   <span style="color:#ff2a25" ng-show="studentForm.lastname.$dirty && studentForm.lastname.$invalid">
+      <span ng-show="studentForm.lastname.$error.required">Last Name is required.</span>
+   </span>
+</td></tr>
+<tr><td>Email: </td><td><input name="email" type="email" ng-model="email" length="100" required>
+<span style="color:#ff2a25" ng-show="studentForm.email.$dirty && studentForm.email.$invalid">
+      <span ng-show="studentForm.email.$error.required">Email is required.</span>
+	  <span ng-show="studentForm.email.$error.email">Invalid email address.</span>
+   </span>
+</td></tr>
+<tr><td>Age: </td><td><input name="age" type="number" ng-model="age" length="2" required>
+<span style="color:#ff2a25" ng-show="studentForm.age.$dirty && studentForm.age.$invalid">
+      <span ng-show="studentForm.age.$error.required">Age is required.</span>
+	  <span ng-show="studentForm.age.$error.number">Invalid number.</span>
+   </span>
+</td></tr>
+<tr><td><button ng-click="reset()">Reset</button></td>
+	<td><button
+	ng-disabled="studentForm.firstname.$dirty && studentForm.firstname.$invalid ||
+			  studentForm.lastname.$dirty && studentForm.lastname.$invalid ||
+			  studentForm.email.$dirty && studentForm.email.$invalid"
+	ng-click="submit()">Submit</button></td></tr>
+</table>
+</form>
+</div>
+
+
+<script type="text/javascript">
+angular.module('mainApp',  [])
+.controller('studentController', function($scope){
+
+	$scope.reset = function(){
+		$scope.firstName = 'Alejandro';
+		$scope.lastName = 'Romero',
+		$scope.email = "alejo8591@gmail.com";
+		$scope.age = 18;
+	}
+
+	$scope.reset();
+});
+</script>
+</body>
+</html>

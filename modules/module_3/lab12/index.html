@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="changeImage">
+<head>
+	<title>Lab12</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div ng-controller="controller_one">
+
+            <img alt="" ng-src="{{ actual_image }}">
+
+
+            <button ng-click="revealImage('http://dummyimage.com/200x200/ff3300/333')">Imagen 1</button>
+
+            <button ng-click="revealImage('http://dummyimage.com/200x200/000/ffea00')">Imagen 2</button>
+
+        </div>
+    </div>
+    
+	
+	<script type="text/javascript">
+        angular.module('changeImage', [])
+               .controller('controller_one', ['$scope', function($scope){
+                    $scope.actual_image = 'http://dummyimage.com/200x200/000/fff';
+                    $scope.revealImage = function(_images){
+                        $scope.actual_image = _images;
+                    };
+               }]);
+	
+	</script>
+</body>
+</html>

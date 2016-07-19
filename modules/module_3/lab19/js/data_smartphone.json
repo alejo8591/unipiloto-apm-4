@@ -1,0 +1,22 @@
+[
+	{
+	"name" : "Samsung",
+	"model":"xtreie22",
+	"price": 1000
+	},
+	{
+	"name" : "Huawei",
+	"model":"xie221",
+	"price": 1300
+	},
+	{
+	"name" : "Lanix",
+	"model":"xtre1",
+	"price": 13000
+	},
+	{
+	"name" : "One plus OneS",
+	"model":"xt1",
+	"price": 200
+	}
+]
