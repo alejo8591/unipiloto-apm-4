@@ -1,0 +1,22 @@
+<ion-view title="Camera Tab Default Page" id="page2" class=" ">
+    <ion-content padding="true" class="has-header">
+    	<header>
+    		<h1>{{yepp}}</h1>
+    	</header>
+    	<div class="list">
+			  <label class="item item-input">
+			    <input ng-model="email" type="email" placeholder="First Name">
+			  </label>
+			  <label class="item item-input">
+			    <input ng-model="pass" type="password" placeholder="">
+			  </label>
+			  <label class="item item-input">
+			    <textarea ng-model="description" placeholder="Comments"></textarea>
+	  		</label>
+		</div>
+		<button ng-click="goToPage(email, pass, description)" class="button button-stable">
+  Save
+</button>
+
+    </ion-content>
+</ion-view>
