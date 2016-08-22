@@ -48553,7 +48553,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * // ...
    *
    * $state.go('home');
-   * // Auto-populates list and item views with /partials/home/contact/list.html,
+   * // Auto-populates list and item views with /partials/home/contact/slide-box.html,
    * // and /partials/home/contact/item.html, respectively.
    * </pre>
    *
