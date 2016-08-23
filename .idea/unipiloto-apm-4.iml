@@ -2,7 +2,16 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_6/lab1/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/modules/module_7/lab4/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_7/lab5/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_8/lab1/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_8/lab10/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_8/lab3/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_8/lab4/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_8/lab5/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_8/lab8/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/module_8/lab9/platforms" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
