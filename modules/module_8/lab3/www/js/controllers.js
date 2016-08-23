@@ -1,4 +1,4 @@
-angular.module('app.controllers', ['ngCordova'])
+angular.module('app.controllers', ['ngCordova', 'ionic'])
 
 .controller('pageOneCtrl', ['$scope', '$state',
   function ($scope, $state){

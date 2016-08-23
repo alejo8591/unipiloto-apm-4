@@ -1,8 +1,6 @@
 angular.module('app.controllers', ['ngCordova'])
 
-.controller('page1Ctrl', ['$scope', '$stateParams', '$cordovaDevice', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('page1Ctrl', ['$scope', '$stateParams', '$cordovaDevice',
 function ($scope, $stateParams, $cordovaDevice) {
 	$scope.setDeviceInformation = function(){
 		localStorage.setItem('device',$cordovaDevice.getDevice());
@@ -20,9 +18,7 @@ function ($scope, $stateParams, $cordovaDevice) {
 
 }])
 
-.controller('page2Ctrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('page2Ctrl', ['$scope', '$stateParams',
 function ($scope, $stateParams) {
 	$scope.getDeviceInformation = function(){
 		$scope.device =localStorage.getItem('device');
@@ -39,10 +35,5 @@ function ($scope, $stateParams) {
 	}
 }])
 
-.controller('cloudCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams) {
-
-
-}])
+.controller('cloudCtrl', ['$scope', '$stateParams',
+function ($scope, $stateParams) {}]);

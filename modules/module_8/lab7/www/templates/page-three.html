@@ -1,0 +1,9 @@
+<ion-view title="Page" id="page3" class=" ">
+    <ion-content padding="true" class="has-header">
+      <button id="page3-button1" class=" button button-positive  button-block " ng-click="getAllContacts()">Ver lista de contactos</button>
+
+      <ion-list id="page3-list1" class=" ">
+            <ion-item ng-repeat="contact in contacts">{{contact}}</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

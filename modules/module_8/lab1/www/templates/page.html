@@ -1,14 +1,8 @@
 <ion-view title="Page" id="page1" class=" ">
     <ion-content padding="true" class="has-header">
-        <button id="page-button1" class=" button button-positive  button-block " ng-click="getDeviceInformation()">show info</button>
-        <ion-list id="page-list1" class=" ">
-            <ion-item id="page-list-item1" class="  ">{{device.platform}}</ion-item>
-            <ion-item id="page-list-item2" class="  ">{{cordova}}</ion-item>
-            <ion-item id="page-list-item3" class="  ">{{model}}</ion-item>
-            <ion-item id="page-list-item4" class="  ">{{platform}}</ion-item>
-            <ion-item id="page-list-item5" class="  ">{{uuid}}</ion-item>
-            <ion-item id="page-list-item3" class="  ">{{version}}</ion-item>
+        <button id="page-button1" class=" button button-positive  button-block " ng-click="captureAudio()">Capture Audio</button>
+        <button id="page-button2" class=" button button-royal  button-block " ng-click="captureImage()">Capture Image</button>
+        <button id="page-button3" class=" button button-calm  button-block " ng-click="captureVideo()">Capture Image</button>
 
-        </ion-list>
     </ion-content>
 </ion-view>
