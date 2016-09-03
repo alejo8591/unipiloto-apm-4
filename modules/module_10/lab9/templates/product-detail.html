@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+<h2>{{ product.name }} details!</h2>
+<label for="id">id</label> <span>{{ product.id }}</span>
+<label for="name">name</label> <span>{{ product.name }}</span>
+<label for="type">type</label> <span>{{ product.type }}</span>
+<label for="quantity">quantity</label> <span>{{ product.quantity }}</span>
+
+<div>
+    <hr />
+    <label>name: </label>
+    <input [(ngModel)]="product.name" placeholder="name">
+    <label>type: </label>
+    <textarea [(ngModel)]="product.type" placeholder="type"></textarea>
+    <label>quantity: </label>
+    <input [(ngModel)]="product.quantity" placeholder="quantity">
+</div>

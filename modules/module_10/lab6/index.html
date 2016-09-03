@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab7</title>
+    <script src="https://rawgithub.com/systemjs/systemjs/0.19.6/dist/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.dev.js"></script>
+
+    <!-- 2. Configuration SystemJS -->
+    <script>// <![CDATA[
+    System.config({
+        transpiler: 'typescript',
+        typescriptOptions: { emitDecoratorMetadata: true },
+        packages: {'src': {defaultExtension: 'ts'}}
+    });
+    // ]]></script>
+    <!-- 3. Bootstrap -->
+    <script>// <![CDATA[
+    System.import('angular2/platform/browser').then(function(ng){
+        System.import('src/ts/index').then(function(src) {
+            ng.bootstrap(src.Hello);
+        });
+    });
+    // ]]></script>
+    <!-- 4. Viewing application -->
+</head>
+<body>
+<tag-index>Conectando...</tag-index>
+</body>
+</html>
