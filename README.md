@@ -31,7 +31,7 @@ El espacio de comunicación y dudas esta abierto y sera como en consenso se deci
 Personas que han contribuido y colaborado con material, intervenciones y ayudas en los diferentes temas tratados en el diplomado:
 
 * Cristhian Cepeda [@crishood](https://github.com/crishood)
-
+* José Quispe [@jeqs](https://github.com/jeqs)
 
 ### Opciones de Licencia para el Código Fuente
 
