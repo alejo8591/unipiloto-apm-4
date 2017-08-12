@@ -26,15 +26,7 @@ for(key in my_object){
 
 
 // Funciones 
-function test(){ index.js
- lab3
- .floo
- .flooignore
- LICENSE
- README.md
- README.md index.html index.js index.js 
-
-
+function test(){
   lastName: 'Romero',
   phone: 1137373
 };
